@@ -2,7 +2,6 @@ const searchBtn = document.getElementById("searchBtn");
 const cityInput = document.getElementById("cityInput");
 const weatherResult = document.getElementById("weatherResult");
 
-// Click par search
 searchBtn.addEventListener("click", getWeather);
 
 async function getWeather() {
@@ -27,3 +26,4 @@ async function getWeather() {
     weatherResult.innerHTML = `<p style="color:red;">${error.message}</p>`;
   }
 }
+
